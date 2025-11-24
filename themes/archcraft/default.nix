@@ -5,7 +5,7 @@ pkgs.stdenv.mkDerivation {
 	src = ./theme;
 	dontUnpack = true;
 	installPhase = ''
-		mkdir -p $out
-		cp -r $src/* $out/
+		 mkdir -p $out/share/sddm/themes
+      cp -aR $src $out/share/sddm/themes/archcraft
 		'';
 	}
